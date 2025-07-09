@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Triển khai dự án on Tạo mới tài khoản AWS</title>
-    <link>/vi/4-deploy-project/</link>
+    <link>https://hoainam1308.github.io/my-workshop-site/vi/4-deploy-project/</link>
     <description>Recent content in Triển khai dự án on Tạo mới tài khoản AWS</description>
     <generator>Hugo</generator>
     <language>vi</language>
-    <atom:link href="/vi/4-deploy-project/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://hoainam1308.github.io/my-workshop-site/vi/4-deploy-project/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tạo S3 Bucket on Tạo mới tài khoản AWS</title>
-    <link>/vi/3-initialize-aws-services/3-create-s3-bucket/</link>
+    <link>https://hoainam1308.github.io/my-workshop-site/vi/3-initialize-aws-services/3-create-s3-bucket/</link>
     <description>Recent content in Tạo S3 Bucket on Tạo mới tài khoản AWS</description>
     <generator>Hugo</generator>
     <language>vi</language>
-    <atom:link href="/vi/3-initialize-aws-services/3-create-s3-bucket/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://hoainam1308.github.io/my-workshop-site/vi/3-initialize-aws-services/3-create-s3-bucket/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

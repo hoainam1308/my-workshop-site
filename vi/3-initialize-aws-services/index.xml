@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Khởi tạo các dịch vụ AWS cần thiết on Tạo mới tài khoản AWS</title>
-    <link>/vi/3-initialize-aws-services/</link>
+    <link>https://hoainam1308.github.io/my-workshop-site/vi/3-initialize-aws-services/</link>
     <description>Recent content in Khởi tạo các dịch vụ AWS cần thiết on Tạo mới tài khoản AWS</description>
     <generator>Hugo</generator>
     <language>vi</language>
-    <atom:link href="/vi/3-initialize-aws-services/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://hoainam1308.github.io/my-workshop-site/vi/3-initialize-aws-services/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

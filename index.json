@@ -1,118 +1,118 @@
 [
 {
-	"uri": "/3-initialize-aws-services/1-create-ec2-instance/",
+	"uri": "https://hoainam1308.github.io/my-workshop-site/3-initialize-aws-services/1-create-ec2-instance/",
 	"title": "Create EC2 Instance",
 	"tags": [],
 	"description": "",
 	"content": "ℹ️ Info: Amazon EC2 (Elastic Compute Cloud) provides scalable computing capacity in the AWS Cloud, eliminating the need for upfront hardware investment.\nTo create a Linux EC2 instance using the AWS Management Console, follow the steps below. This guide will help you quickly launch your first instance with the required configuration.\nCreate EC2 Instance Open your web browser and navigate to the Amazon EC2 Console at https://console.aws.amazon.com/ec2/. In the left navigation pane, under Instances, select Instances, then click Launch instances.\nEnter a name, e.g., workshop-ec2.\nUnder Application and OS Images:\nChoose Amazon Linux Under Amazon Machine Image (AMI), select Amazon Linux 2 AMI Select t2.micro under Instance type Under Key pair, select Create new key pair: Enter a name for the key pair, e.g., my-workshop-keypair For Key pair type, choose .RSA For Private key file format, choose .pem Click Create key pair and save the file securely Under Network settings, click Edit: Select the VPC you created earlier Choose a public subnet that has Auto-assign public IP enabled Select Use existing security group Choose the security group you created for EC2: workshop-ec2-sg Review the Summary and click Launch instance "
 },
 {
-	"uri": "/2-preparation/1-create-vpc/",
+	"uri": "https://hoainam1308.github.io/my-workshop-site/2-preparation/1-create-vpc/",
 	"title": "Create VPC",
 	"tags": [],
 	"description": "",
 	"content": "Create a VPC with Subnets and Related Resources ℹ️ Info: Amazon Virtual Private Cloud (Amazon VPC) allows you to launch AWS resources into a virtual network that you define. This virtual network closely resembles a traditional network in your own data center, with the added benefit of AWS\u0026rsquo;s scalable infrastructure.\nFollow the steps below to create a VPC with all the necessary components for deploying your website:\nOpen the Amazon VPC console at https://console.aws.amazon.com/vpc/.\nOn the VPC dashboard, select Create VPC.\nTo create resources, select VPC and more to set up a complete VPC environment. Configure the Auto-generate name tag option based on your preference. This allows AWS to automatically create consistent naming for all VPC resources.\nEnter an IPv4 CIDR block range for your VPC (e.g., 10.0.0.0/16). This defines the IP address range available within your VPC.\n(Optional) To enable IPv6 support, select IPv6 CIDR block and choose an Amazon-provided IPv6 range.\nFor Number of Availability Zones (AZs), select at least two AZs to ensure high availability.\nSelect at least two private subnets to create a subnet group for DocumentDB.\nReview the Preview section to see a visual diagram of your configured VPC architecture.\nClick Create VPC to provision all configured resources.\nConfigure the public subnet: In the VPC console, select the public subnet Click Actions -\u0026gt; Edit subnet settings Check the option Enable auto-assign public IPv4 address "
 },
 {
-	"uri": "/4-deploy-project/1-deploy-be-nodejs-ec2/",
+	"uri": "https://hoainam1308.github.io/my-workshop-site/4-deploy-project/1-deploy-be-nodejs-ec2/",
 	"title": "Deploy Backend",
 	"tags": [],
 	"description": "",
 	"content": "Deployment Steps SSh into EC2 In this section, we use MobaXterm, which you can download here:\nAfter installation, open the main interface, click Sessions → New Session, then choose SSH. Go back to the EC2 Console, under Instances, select your EC2 instance and click Connect. In the SSH client tab, copy the Public DNS.\nIn Basic SSH settings in MobaXterm:\nPaste the copied Public DNS into Remote host Tick Specify username and enter ec2-user In Advanced SSH settings:\nTick Use private key and select the saved key file my-workshop-keypair.pem Click OK to connect Click Access Tải source code từ Github về EC2 và cài các thư viện cần thiết In the EC2 terminal, install Git: sudo yum install git -y Clone project: git clone PROJECT_LINK Refresh the folder view to verify the cloned repo. Install nvm (Node Version Manager): curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash Activate nvm: NVM_DIR=\u0026#34;$HOME/.nvm\u0026#34; source \u0026#34;$NVM_DIR/nvm.sh\u0026#34; Install and use Node.js version 16: nvm use 16 Check installed versions: node -v npm -v Inside the project folder, create the required .env and other configuration files.\nInstall dependencies:\ncd FOLER_PROJECT npm install Connect to DocumentDB and Frontend Download the global bundle.pem and upload it to your project directory.\nIt’s recommended to save the file in your user\u0026rsquo;s Downloads or Documents folder to avoid permission issues when uploading.\nIn the DocumentDB console, under Clusters, select your DocumentDB instance and copy the Connect with application URI.\nInsert your password into the copied connection URI and paste it into the mongoose.connect line in your backend code.\nCopy your S3 Static Website Hosting URL and set it as the urlFE (frontend URL) in your backend’s Axios configuration.\nStart the backend server:\nnpm start "
 },
 {
-	"uri": "/1-introduction/",
+	"uri": "https://hoainam1308.github.io/my-workshop-site/1-introduction/",
 	"title": "Introduction",
 	"tags": [],
 	"description": "",
 	"content": "Contents:\nProject Overview Amazon DocumentDB Project Overview The e-commerce website project is built with a Node.js backend, MongoDB database, and a React frontend. The system supports essential features such as user registration, login, adding products to the cart, payment, and viewing order history. This serves as a scalable foundation for modern e-commerce applications.\nAmazon DocumentDB Amazon DocumentDB is a MongoDB-compatible document database service provided by AWS. It supports two types of clusters (instance-based and elastic) with the ability to scale read/write operations to millions of requests per second. Storage automatically scales up to 128 TiB and supports up to 15 read replicas to improve read performance. It allows flexible compute resource scaling, encrypts data using AWS KMS, operates within a VPC, and supports automated backups with point-in-time recovery. DocumentDB features automatic recovery and failover, while meeting strict security standards such as FedRAMP compliance.\nAmazon DocumentDB "
 },
 {
-	"uri": "/",
+	"uri": "https://hoainam1308.github.io/my-workshop-site/",
 	"title": "Starting Deploy Web to AWS",
 	"tags": [],
 	"description": "",
 	"content": "Starting Deploy Web to AWS E-commerce Website Project The e-commerce website project is built with a Node.js backend, MongoDB database, and React frontend. The system supports core features such as user registration, login, adding products to the cart, payment, and viewing the order history. This serves as a scalable foundation for modern e-commerce applications.\nAWS Services Used Amazon EC2: Deploy the Node.js backend. Amazon S3: Store and serve the static React frontend. Amazon DocumentDB: Provide a MongoDB-compatible database with scalability, backup, and encryption capabilities. Main Content Introduction Preparation Initialize AWS Services Deploy the Project Clean Up Resources "
 },
 {
-	"uri": "/3-initialize-aws-services/2-create-documentdb-cluster/",
+	"uri": "https://hoainam1308.github.io/my-workshop-site/3-initialize-aws-services/2-create-documentdb-cluster/",
 	"title": "Create DocumentDB",
 	"tags": [],
 	"description": "",
 	"content": "Create DocumentDB Open the Amazon DocumentDB console at https://console.aws.amazon.com/docdb\nIn the Clusters section, click Create\nSelect Instance-based cluster\nUnder Number of regular replica instances, enter the desired number of replicas\nIn the Authentication section: Enter a username, e.g., workshopdb Choose Self managed Enter and confirm the Password Click Show advanced settings, and under Network settings: Select the VPC you created earlier Select the subnet group you created\nIf you don\u0026rsquo;t see the VPC listed, try reloading the page.\nScroll back up to the Connectivity section and select Connect to an EC2 compute resource, then choose the EC2 instance you created. (Optional) Uncheck Enable deletion protection to make it easier to clean up resources later.\nClick Create cluster to launch the DocumentDB cluster.\n"
 },
 {
-	"uri": "/2-preparation/2-create-security-group/",
+	"uri": "https://hoainam1308.github.io/my-workshop-site/2-preparation/2-create-security-group/",
 	"title": "Create Security Group",
 	"tags": [],
 	"description": "",
 	"content": "Create Security Group for EC2 ℹ️ Info: Security groups act as virtual firewalls for Amazon EC2 instances, controlling inbound and outbound traffic.\nFor the DocumentDB deployment, we need to create a security group for the EC2 instances that will connect to our database.\nFollow these steps to create a Security Group with the necessary ports:\nOpen the Amazon VPC console at https://console.aws.amazon.com/vpc/.\nIn the VPC navigation panel, under Security, choose Security groups.\nClick Create security group.\nIn the Basic details section:\nEnter a name for the security group, e.g., workshop-ec2-sg Add a description For VPC, select the one created previously In the Inbound rules section, click Add rule and configure access:\nType: SSH, Source: My IP Type: HTTP, Source: Anywhere Type: HTTPS, Source: Anywhere Type: Custom TCP, Port range: 3000, Source: Anywhere For production environments, restrict SSH access to trusted IP ranges instead of allowing access from anywhere (0.0.0.0/0).\nReview your settings and click Create security group. After creation, the new security group will appear in the list. Take note of its ID as you will need it when launching an EC2 instance. Create Security Group for DocumentDB Follow these steps to create a Security Group for DocumentDB with the required port:\nFrom the Security Groups list, click Create security group.\nIn the Basic details section:\nEnter a name for the se "
 },
 {
-	"uri": "/2-preparation/",
+	"uri": "https://hoainam1308.github.io/my-workshop-site/2-preparation/",
 	"title": "Preparation",
 	"tags": [],
 	"description": "",
 	"content": "Overview ℹ️ What You Need to Prepare\nIn this workshop, you will build a complete Amazon VPC environment following AWS best practices for networking architecture and security. You will create all the essential components required for deploying a production-ready VPC.\nAdditionally, it\u0026rsquo;s recommended to host your source code on GitHub for easy access and deployment.\nBackend Node.js\nFrontend React.js\nThe architecture we will deploy is illustrated in the diagram below:\nPreparation Steps In this section, we will create the VPC and related services:\nCreate VPC Create Security Group Create Subnet Group "
 },
 {
-	"uri": "/4-deploy-project/2-restore-mongo-data-documentdb/",
+	"uri": "https://hoainam1308.github.io/my-workshop-site/4-deploy-project/2-restore-mongo-data-documentdb/",
 	"title": "Restore Data",
 	"tags": [],
 	"description": "",
 	"content": "Steps to Restore Data from MongoDB to DocumentDB Dump Data from Local MongoDB In this step, we use the MongoDB Database Tools to export the existing MongoDB data.\nOn your local machine, run the following command: mongodump --uri=\u0026#34;mongodb://localhost:27017/your_db\u0026#34; --out=dump-folder Upload the dump-folder to your EC2 instance under the ec2-user home directory using MobaXterm Restore Data to Amazon DocumentDB Navigate to the EC2 user home directory: Quay về thư mục ec2-user cd ~ Create the MongoDB YUM repository file: echo \u0026#34;[mongodb-org-6.0] name=MongoDB Repository baseurl=https://repo.mongodb.org/yum/amazon/2/mongodb-org/6.0/x86_64/ gpgcheck=1 enabled=1 gpgkey=https://pgp.mongodb.com/server-6.0.asc\u0026#34; | sudo tee /etc/yum.repos.d/mongodb-org-6.0.repo Install MongoDB tools: sudo yum install -y mongodb-org-tools Restore Data to DocumentDB Download the DocumentDB certificate: curl -O https://s3.amazonaws.com/rds-downloads/rds-combined-ca-bundle.pem Run the mongorestore command (replace the placeholders accordingly): mongorestore \\ --host= docdb-xxxxx.cluster-xxxxx.us-east-1.docdb.amazonaws.com \\ --port=27017 \\ --ssl \\ --tlsInsecure \\ --username= YOUR_USER \\ --password= YOUR_PASS \\ --authenticationDatabase=admin \\ dump-folder To access the restored data from your backend application, make sure the connection URI used in mongoose.connect() includes the database name.\n"
 },
 {
-	"uri": "/3-initialize-aws-services/3-create-s3-bucket/",
+	"uri": "https://hoainam1308.github.io/my-workshop-site/3-initialize-aws-services/3-create-s3-bucket/",
 	"title": "Create S3 Bucket",
 	"tags": [],
 	"description": "",
 	"content": "Create S3 Bucket Open the Amazon S3 Console at https://console.aws.amazon.com/s3 and click Create bucket. Enter a bucket name, for example: workshop-s3-fe. Uncheck Block all public access and check the acknowledgment box below. Review the settings and click Create bucket. In the Permissions tab of the newly created bucket, go to Bucket policy, click Edit, and paste the following code into the Policy field: { \u0026#34;Version\u0026#34;: \u0026#34;2012-10-17\u0026#34;, \u0026#34;Statement\u0026#34;: [ { \u0026#34;Sid\u0026#34;: \u0026#34;PublicReadGetObject\u0026#34;, \u0026#34;Effect\u0026#34;: \u0026#34;Allow\u0026#34;, \u0026#34;Principal\u0026#34;: \u0026#34;*\u0026#34;, \u0026#34;Action\u0026#34;: \u0026#34;s3:GetObject\u0026#34;, \u0026#34;Resource\u0026#34;: \u0026#34;arn:aws:s3:::workshop-s3-fe/*\u0026#34; } ] } Click Save changes Retrieve the EC2 public IP address to configure the VITE_BACKEND_URL for the React frontend.\nBuild Frontend:\nOpen the React frontend project in Visual Studio Code Update the environment variable VITE_BACKEND_URL in the .env file Run the build command: npm run build. This will generate a dist or build folder Upload the contents of the build folder to the S3 bucket:\nIn the Objects tab of the S3 bucket, click Upload Drag and drop all files/folders from the build directory into the Upload area Click Upload and wait for the upload to complete Enable static website hosting\nGo to the Properties tab of the bucket, scroll to Static website hosting, and click Edit Check Enable for Static website hosting In the Index document field, enter index.html Click Save changes, then test the frontend site "
 },
 {
-	"uri": "/2-preparation/3-create-subnet-group/",
+	"uri": "https://hoainam1308.github.io/my-workshop-site/2-preparation/3-create-subnet-group/",
 	"title": "Create Subnet Group",
 	"tags": [],
 	"description": "",
 	"content": "Create Subnet Group for DocumentDB Open the Amazon DocumentDB console at https://console.aws.amazon.com/docdb/\nIn the left-hand navigation panel, select Subnet groups, then click Create.\nIn the Subnet group detail section:\nEnter a name, e.g., workshop-documentdb-subnet-group Enter a description In the Add subnets section:\nSelect the VPC you created earlier Select two Availability Zones that contain subnets For each AZ, select one private subnet Click Add subnet Review the subnet information to ensure accuracy\nClick Create to create the subnet group\n"
 },
 {
-	"uri": "/3-initialize-aws-services/",
+	"uri": "https://hoainam1308.github.io/my-workshop-site/3-initialize-aws-services/",
 	"title": "Initialize Required AWS Services",
 	"tags": [],
 	"description": "",
 	"content": "EC2 Amazon DocumentDB Amazon Elastic Compute Cloud (EC2) is a core AWS service that provides scalable computing capacity in the cloud. Below is an overview of EC2: [1]\nEC2 allows users to launch virtual servers (called instances) in the AWS cloud environment. Supports various instance types optimized for different use cases, offering a mix of CPU, memory, storage, and network capacity. Users have full control over EC2 instances, including the ability to start, stop, and terminate them at any time. Supports multiple operating systems such as various Linux distributions and Windows Server. Offers flexible pricing models: On-Demand, Reserved Instances, and Spot Instances to optimize costs based on workload needs. Integrates with other AWS services like Elastic Block Store (EBS) for persistent storage and Auto Scaling for dynamic scaling. Security integrations such as VPC, security groups, and key pairs for secure access. EC2 instances can be launched across multiple Availability Zones within a region to ensure high availability and fault tolerance. EC2 is a foundational platform for many cloud-based applications due to its scalability, flexibility, and integration with the AWS ecosystem.\nSource:\n[1] AWS Compute Services Overview\nS3 Amazon DocumentDB Amazon Simple Storage Service (S3) is a highly scalable, durable, and flexible object storage service provided by AWS. Overview of S3: [1]\nObject Storage: S3 stores data as objects in buckets – ideal for unstructured data like documents, images, and videos. [2] Scalability: Virtually unlimited storage allows businesses to scale as needed. Durability and Availability: Designed for 99.999999999% (11 9s) durability, ensuring data remains safe. Security: Supports encryption at rest and in transit, access control policies, and IAM integration. Performance: Low-latency, high-throughput access makes it suitable for a wide range of applications. Storage Classes: Multiple tiers such as S3 Standard, Intelligent-Tiering, S3 Glacier help optimize cost based on access patterns. Data Management: Features like versioning, replication, and lifecycle policies for efficient data lifecycle control. Integration: Works seamlessly with AWS services like Lambda, CloudFront, Athena, and more. Cost-effective: Pay-as-you-go pricing based on actual usage. Global Access: Access your data from anywhere, ideal for global content delivery. Sources:\n[1] What is Amazon S3?\n[2] Amazon S3 Overview\nDocumentDB Amazon DocumentDB Amazon DocumentDB is a fully managed document database service from AWS, compatible with MongoDB. Overview of DocumentDB: [1]\nMongoDB-Compatible: Supports MongoDB 3.6 and 4.0 APIs – allowing use of existing drivers and tools with minimal changes. [2] Fully Managed: AWS handles infrastructure provisioning, patching, backups, and maintenance so developers can focus on building applications. [3] Scalability: Supports millions of queries per second and auto-scales storage – up to 128 TiB (instance-based) or 4 PiB (Elastic Clusters). High Performance: Uses distributed, fault-tolerant storage architecture. High Availability: Data is replicated across multiple Availability Zones. Security: Network isolation, encryption at rest and in transit, IAM integration for access control. Use Cases: Ideal for content management systems, user profile stores, mobile backends, and dynamic JSON apps. Data Model: Stores, queries, and indexes JSON-format data – suitable for flexible schemas. Integration: Works with AWS Glue, S3, SageMaker, and other services for data processing and machine learning. Sources:\n[1] Amazon DocumentDB (MongoDB compatible) Features\n[2] Choosing an AWS NoSQL Database – Amazon DocumentDB\n[3] Value of Document Databases in the Public Sector – AWS Blog\n"
 },
 {
-	"uri": "/4-deploy-project/3-test-website/",
+	"uri": "https://hoainam1308.github.io/my-workshop-site/4-deploy-project/3-test-website/",
 	"title": "Run and Test",
 	"tags": [],
 	"description": "",
 	"content": "Run Backend with PM2 Use PM2 to keep your backend running persistently on the EC2 instance, even after restarts. Install PM2 globally and run your app:\nnpm install -g pm2 pm2 start bin/www --name {myappname} pm2 list pm2 save pm2 startup After executing pm2 startup, PM2 will return a command. Copy and run that command to enable automatic startup on reboot.\nTest Data Insertion into DocumentDB Sử dụng REST client (như Postman hoặc Thunder Client) để gửi POSTyêu cầu đến API backend của bạn để tạo sản phẩm. Đảm bảo đính kèm tệp hình ảnh trong nội dung yêu cầu.\nVerify Data Retrieval on Frontend "
 },
 {
-	"uri": "/4-deploy-project/",
+	"uri": "https://hoainam1308.github.io/my-workshop-site/4-deploy-project/",
 	"title": "Deploy Project",
 	"tags": [],
 	"description": "",
 	"content": "Deployment Steps Since the frontend has already been deployed in step 3.3 Create S3 Bucket, in this section we only need to:\nDeploy the backend Restore data from MongoDB to DocumentDB Test the website "
 },
 {
-	"uri": "/5-clean-up-resources/",
+	"uri": "https://hoainam1308.github.io/my-workshop-site/5-clean-up-resources/",
 	"title": "Clean Up Resources",
 	"tags": [],
 	"description": "",
 	"content": "🧹 Clean Up AWS Resources After completing your deployment and testing, it\u0026rsquo;s recommended to clean up unused AWS resources to avoid unnecessary charges.\n🪣 Empty S3 Bucket Go to the Amazon S3 Console From the bucket list, select the relevant Bucket Click Empty On the Empty bucket page, confirm and click Empty ❌ Delete S3 Bucket Go to Amazon S3 Select the relevant Bucket Click Delete, confirm the action, and click Delete bucket 🗑️ Delete DocumentDB Cluster Go to Amazon DocumentDB In the Clusters list, select the appropriate Cluster (Optional) If Deletion protection is enabled: Click Actions → Modify Uncheck Enable deletion protection Click Continue → Modify cluster Click Actions → Delete Confirm and click Delete 💻 Terminate EC2 Instance Exit the SSH session if connected Go to the Amazon EC2 Console In the left navigation pane, select Instances Select the EC2 instance Click Instance state → Terminate instance Confirm Termination 🌐 Delete Subnet Group You must wait until the DocumentDB cluster is fully deleted before deleting its subnet group.\nGo to Amazon DocumentDB In the left menu, select Subnet groups Select the relevant Subnet group Click Actions → Delete Confirm the Deletion 🔐 Delete Security Groups Go to Amazon VPC In the left menu, choose Security groups Select all relevant Security groups Click Actions → Delete Security groups Confirm the Deletion 🌐 Delete VPC Go to Amazon VPC In the left menu, select Your VPCs From the VPC list, select the relevant VPC Click Actions → Delete VPC Confirm the Deletion "
 },
 {
-	"uri": "/categories/",
+	"uri": "https://hoainam1308.github.io/my-workshop-site/categories/",
 	"title": "Categories",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "/tags/",
+	"uri": "https://hoainam1308.github.io/my-workshop-site/tags/",
 	"title": "Tags",
 	"tags": [],
 	"description": "",

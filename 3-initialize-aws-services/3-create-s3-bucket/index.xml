@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Create S3 Bucket on Create a new AWS account.</title>
-    <link>/3-initialize-aws-services/3-create-s3-bucket/</link>
+    <link>https://hoainam1308.github.io/my-workshop-site/3-initialize-aws-services/3-create-s3-bucket/</link>
     <description>Recent content in Create S3 Bucket on Create a new AWS account.</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="/3-initialize-aws-services/3-create-s3-bucket/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://hoainam1308.github.io/my-workshop-site/3-initialize-aws-services/3-create-s3-bucket/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

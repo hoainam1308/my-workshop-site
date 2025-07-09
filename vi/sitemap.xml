@@ -2,208 +2,208 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/vi/1-introduction/</loc>
+    <loc>https://hoainam1308.github.io/my-workshop-site/vi/1-introduction/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/1-introduction/"
+                href="https://hoainam1308.github.io/my-workshop-site/1-introduction/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/1-introduction/"
+                href="https://hoainam1308.github.io/my-workshop-site/vi/1-introduction/"
                 />
   </url><url>
-    <loc>/vi/</loc>
+    <loc>https://hoainam1308.github.io/my-workshop-site/vi/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/"
+                href="https://hoainam1308.github.io/my-workshop-site/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/"
+                href="https://hoainam1308.github.io/my-workshop-site/vi/"
                 />
   </url><url>
-    <loc>/vi/3-initialize-aws-services/1-create-ec2-instance/</loc>
+    <loc>https://hoainam1308.github.io/my-workshop-site/vi/3-initialize-aws-services/1-create-ec2-instance/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/3-initialize-aws-services/1-create-ec2-instance/"
+                href="https://hoainam1308.github.io/my-workshop-site/3-initialize-aws-services/1-create-ec2-instance/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/3-initialize-aws-services/1-create-ec2-instance/"
+                href="https://hoainam1308.github.io/my-workshop-site/vi/3-initialize-aws-services/1-create-ec2-instance/"
                 />
   </url><url>
-    <loc>/vi/2-preparation/1-create-vpc/</loc>
+    <loc>https://hoainam1308.github.io/my-workshop-site/vi/2-preparation/1-create-vpc/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2-preparation/1-create-vpc/"
+                href="https://hoainam1308.github.io/my-workshop-site/2-preparation/1-create-vpc/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2-preparation/1-create-vpc/"
+                href="https://hoainam1308.github.io/my-workshop-site/vi/2-preparation/1-create-vpc/"
                 />
   </url><url>
-    <loc>/vi/4-deploy-project/1-deploy-be-nodejs-ec2/</loc>
+    <loc>https://hoainam1308.github.io/my-workshop-site/vi/4-deploy-project/1-deploy-be-nodejs-ec2/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/4-deploy-project/1-deploy-be-nodejs-ec2/"
+                href="https://hoainam1308.github.io/my-workshop-site/4-deploy-project/1-deploy-be-nodejs-ec2/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/4-deploy-project/1-deploy-be-nodejs-ec2/"
+                href="https://hoainam1308.github.io/my-workshop-site/vi/4-deploy-project/1-deploy-be-nodejs-ec2/"
                 />
   </url><url>
-    <loc>/vi/2-preparation/</loc>
+    <loc>https://hoainam1308.github.io/my-workshop-site/vi/2-preparation/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2-preparation/"
+                href="https://hoainam1308.github.io/my-workshop-site/2-preparation/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2-preparation/"
+                href="https://hoainam1308.github.io/my-workshop-site/vi/2-preparation/"
                 />
   </url><url>
-    <loc>/vi/3-initialize-aws-services/2-create-documentdb-cluster/</loc>
+    <loc>https://hoainam1308.github.io/my-workshop-site/vi/3-initialize-aws-services/2-create-documentdb-cluster/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/3-initialize-aws-services/2-create-documentdb-cluster/"
+                href="https://hoainam1308.github.io/my-workshop-site/3-initialize-aws-services/2-create-documentdb-cluster/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/3-initialize-aws-services/2-create-documentdb-cluster/"
+                href="https://hoainam1308.github.io/my-workshop-site/vi/3-initialize-aws-services/2-create-documentdb-cluster/"
                 />
   </url><url>
-    <loc>/vi/2-preparation/2-create-security-group/</loc>
+    <loc>https://hoainam1308.github.io/my-workshop-site/vi/2-preparation/2-create-security-group/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2-preparation/2-create-security-group/"
+                href="https://hoainam1308.github.io/my-workshop-site/2-preparation/2-create-security-group/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2-preparation/2-create-security-group/"
+                href="https://hoainam1308.github.io/my-workshop-site/vi/2-preparation/2-create-security-group/"
                 />
   </url><url>
-    <loc>/vi/4-deploy-project/2-restore-mongo-data-documentdb/</loc>
+    <loc>https://hoainam1308.github.io/my-workshop-site/vi/4-deploy-project/2-restore-mongo-data-documentdb/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/4-deploy-project/2-restore-mongo-data-documentdb/"
+                href="https://hoainam1308.github.io/my-workshop-site/4-deploy-project/2-restore-mongo-data-documentdb/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/4-deploy-project/2-restore-mongo-data-documentdb/"
+                href="https://hoainam1308.github.io/my-workshop-site/vi/4-deploy-project/2-restore-mongo-data-documentdb/"
                 />
   </url><url>
-    <loc>/vi/4-deploy-project/3-test-website/</loc>
+    <loc>https://hoainam1308.github.io/my-workshop-site/vi/4-deploy-project/3-test-website/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/4-deploy-project/3-test-website/"
+                href="https://hoainam1308.github.io/my-workshop-site/4-deploy-project/3-test-website/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/4-deploy-project/3-test-website/"
+                href="https://hoainam1308.github.io/my-workshop-site/vi/4-deploy-project/3-test-website/"
                 />
   </url><url>
-    <loc>/vi/3-initialize-aws-services/</loc>
+    <loc>https://hoainam1308.github.io/my-workshop-site/vi/3-initialize-aws-services/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/3-initialize-aws-services/"
+                href="https://hoainam1308.github.io/my-workshop-site/3-initialize-aws-services/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/3-initialize-aws-services/"
+                href="https://hoainam1308.github.io/my-workshop-site/vi/3-initialize-aws-services/"
                 />
   </url><url>
-    <loc>/vi/3-initialize-aws-services/3-create-s3-bucket/</loc>
+    <loc>https://hoainam1308.github.io/my-workshop-site/vi/3-initialize-aws-services/3-create-s3-bucket/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/3-initialize-aws-services/3-create-s3-bucket/"
+                href="https://hoainam1308.github.io/my-workshop-site/3-initialize-aws-services/3-create-s3-bucket/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/3-initialize-aws-services/3-create-s3-bucket/"
+                href="https://hoainam1308.github.io/my-workshop-site/vi/3-initialize-aws-services/3-create-s3-bucket/"
                 />
   </url><url>
-    <loc>/vi/2-preparation/3-create-subnet-group/</loc>
+    <loc>https://hoainam1308.github.io/my-workshop-site/vi/2-preparation/3-create-subnet-group/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2-preparation/3-create-subnet-group/"
+                href="https://hoainam1308.github.io/my-workshop-site/2-preparation/3-create-subnet-group/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2-preparation/3-create-subnet-group/"
+                href="https://hoainam1308.github.io/my-workshop-site/vi/2-preparation/3-create-subnet-group/"
                 />
   </url><url>
-    <loc>/vi/4-deploy-project/</loc>
+    <loc>https://hoainam1308.github.io/my-workshop-site/vi/4-deploy-project/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/4-deploy-project/"
+                href="https://hoainam1308.github.io/my-workshop-site/4-deploy-project/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/4-deploy-project/"
+                href="https://hoainam1308.github.io/my-workshop-site/vi/4-deploy-project/"
                 />
   </url><url>
-    <loc>/vi/5-clean-up-resources/</loc>
+    <loc>https://hoainam1308.github.io/my-workshop-site/vi/5-clean-up-resources/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/5-clean-up-resources/"
+                href="https://hoainam1308.github.io/my-workshop-site/5-clean-up-resources/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/5-clean-up-resources/"
+                href="https://hoainam1308.github.io/my-workshop-site/vi/5-clean-up-resources/"
                 />
   </url><url>
-    <loc>/vi/categories/</loc>
+    <loc>https://hoainam1308.github.io/my-workshop-site/vi/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/categories/"
+                href="https://hoainam1308.github.io/my-workshop-site/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/categories/"
+                href="https://hoainam1308.github.io/my-workshop-site/vi/categories/"
                 />
   </url><url>
-    <loc>/vi/tags/</loc>
+    <loc>https://hoainam1308.github.io/my-workshop-site/vi/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/"
+                href="https://hoainam1308.github.io/my-workshop-site/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/tags/"
+                href="https://hoainam1308.github.io/my-workshop-site/vi/tags/"
                 />
   </url>
 </urlset>

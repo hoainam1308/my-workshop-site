@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Clean Up Resources on Create a new AWS account.</title>
-    <link>/5-clean-up-resources/</link>
+    <link>https://hoainam1308.github.io/my-workshop-site/5-clean-up-resources/</link>
     <description>Recent content in Clean Up Resources on Create a new AWS account.</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="/5-clean-up-resources/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://hoainam1308.github.io/my-workshop-site/5-clean-up-resources/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
